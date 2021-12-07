@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+/* 반복제어문3 - 형성평가3
+ 자연수 n을 입력받아 "출력 예"와 같이 출력되는 프로그램을 작성하시오.
+
+주의! '*'과 '*'사이에 공백이 없고 줄사이에도 빈줄이 없다.
+
+3 
+ 
+*
+**
+***
+**
+*
+ 
+ 
+ */
+public class LOOP3_TEST03 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int i,j;
+		for(i=1;i<=n;i++) {
+			for(j=1;j<=i;j++)
+			System.out.print("*");
+			System.out.println();
+		}
+		for(i=1;i<n;i++) {
+			for(j=n-1;j>=i;j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		sc.close();
+	}
+}
