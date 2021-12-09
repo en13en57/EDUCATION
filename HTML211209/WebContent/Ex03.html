@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>링크 만들기</title>
+<style>
+    /* 스타일 주석 */
+    /* 링크 상태에따른 속성 변경*/
+    a:link    { color: teal; }
+    a:visited { color: maroon; text-decoration: none }
+    a:hover   { color: yellow; text-decoration: none; font-size: 20pt; }
+    a:active  { color: red; text-decoration: none }
+</style>
+</head>
+<body>
+	<a href="https://www.naver.com">네이버로 가기(현재창)</a><br />
+	<a href="https://www.naver.com" target=" blank">네이버로 가기(새로운창)</a><br />
+	<a href="Ex01.html">문서로 이동</a><br />
+	<a href="Ex04.html#bottom">Ex04.html의 문서의 끝으로 이동</a><br />
+	<!-- 
+	문서를 지정하여 브라우저가 해석 가능하면 내용을 보여주고
+	해석 불가능하면 다운로드 받아진다
+	 -->
+	<a href="images/bg2.jpg">이미지 보기</a><br />
+	<a href="images/data.zip">압축파일 보기</a><br />
+	
+	<a href="mailto:admin@naver.com">메일 보내기</a><br />
+	<a href="javascript:alert('왜눌러!')">자바스크립트 호출</a><br />
+	<a href="images/bg2.jpg" target="myframe">타겟을 다른 프레임으로 지정하기</a><br />
+	
+	<br />
+	
+	<!-- 현재 문서에 다른 컨텐츠를 표시한다. -->
+	<iframe name="myframe" src="http://kakao.com" style="width:50%; height: 330px; border:10px solid red;"></iframe>
+	
+</body>
+</html>
