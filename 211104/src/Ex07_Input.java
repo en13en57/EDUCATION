@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 //출력을 배웠으니 입력을 받아보자
 public class Ex07_Input {
@@ -22,9 +21,9 @@ public class Ex07_Input {
 		// 'A' + 1 = 65 + 1 = 66 : 'A' 의 ASCII코드값 65번으로 변경되어 정수 연산을 한다.
 		System.out.println((char)(a + 1)); // 다시 문자형으로 변경하면 66번 코드 'B'가 나온다.
 		// 대문자 + 32 = 소문자, 소문자 - 32 = 대문자
-		System.out.println((char)(a + 32)); // 다시 문자형으로 변경하면 66번 코드 'B'가 나온다.
-		System.out.println((char)('f' - 32)); // 다시 문자형으로 변경하면 66번 코드 'B'가 나온다.
-		System.out.println((char)('F' + 32)); // 다시 문자형으로 변경하면 66번 코드 'B'가 나온다.
+		System.out.println((char)(a + 32)); // 다시 문자형으로 변경하면 97번 코드 'a'가 나온다.
+		stem.out.println((char)('f' - 32)); // 다시 문자형으로 변경하면 70번 코드 'F'가 나온다.
+		System.out.println((char)('F' + 32)); // 다시 문자형으로 변경하면 102번 코드 'f'가 나온다.
 	}
 
 }
