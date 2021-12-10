@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 서버로 데이터를 전송할때 사용하는 태그 -->
+	<fieldset>
+	<legend>회원가입 폼</legend>
+	<form action="서버에서 내용을 받아줄 파일이름" method="전송방식">
+		이름 : <input type="text" name="name" id="name"> <br />
+		비밀번호 : <input type="password" name="password" id="password"> <br />
+		성별 : 
+		<label> <input type="radio" name="gender" value="1"/> 남자 </label>
+		<label> <input type="radio" name="gender" value="2"/> 여자 </label>
+		<br />
+		사용가능 언어 : 
+		<label> <input type="checkbox" name="language" value="java"> JAVA </label>
+		<label> <input type="checkbox" name="language" value="HTML"> HTML </label>
+		<label> <input type="checkbox" name="language" value="CSS"> CSS </label>
+		<label> <input type="checkbox" name="language" value="JavaScript"> JavaScript </label>
+		<hr />
+		연령대 : 
+		<select name="age" id="age">
+			<option value="10"> 10대</option>
+			<option value="20"> 20대</option>
+			<option value="30"> 30대</option>
+			<option value="40"> 40대</option>
+		</select>
+		<br />
+		가입인사 : 
+		<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+		<br />
+		첨부파일 : <input type="file" name="file" />
+		<br />
+		<input type="hidden" name="hid"  value="하하하하"/>
+		<input type="reset" />
+		<input type="button" value="눌러봐" />
+		<input type="submit" value="로그인"/>
+	</form>
+	</fieldset>
+</body>
+</html>
