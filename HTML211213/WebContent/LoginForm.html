@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<style type="text/css">
+	/* 태그명을 지정하면 지정 태그에 적용 */
+	table { width:350px; margin: auto; border: 1px solid gray; padding:10px;}
+	/* .으로 시작하면 class속성에 적용 */
+	.title {background-color: black;color:white;text-align: center; font-size: 18pt; padding : 10px;}
+	.input { width: 180px; border: 1px solid skyblue; font-size: 12pt;}
+	/* #으로 시작하면 id속성에 적용 */
+	#submitBtn {width: 130px; height: 60px;}
+	/* A태그의 속성 지정 */
+	a {font-size: 9pt;font-weight: bold; text-decoration: none;}
+	a:link { color : darkGray;}
+	a:visited { color : darkGray;}
+	a:hover { color : pink;}
+	a:active { color : darkGray;}
+</style>
+</head>
+<body>
+	<form action="login.jsp" method="get">
+		<table>
+			<tr>
+				<td colspan="2" class="title">로그인</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="userid" class="input"  placeholder="아이디 입력" required="required"/>
+				</td>
+				<td rowspan="2" align="right">
+					<input type="submit" id="submitBtn" value="로그인" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="password" name="password"  class="input"  placeholder="비밀번호 입력" required="required"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<!-- 라벨을 클릭해도 체크박스가 선택되게 하는 방법 1 -->
+					<!-- 
+					<input type="checkbox" name="saveID" id="saveID" value="true"> <label for="saveID">아이디저장</label>
+					-->
+					<!-- 라벨을 클릭해도 체크박스가 선택되게 하는 방법 2 -->
+					<label><input type="checkbox" name="saveID" id="saveID" value="true">아이디저장</label>
+				</td>
+				<td>
+					<a href="#">회원가입</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="#">정보찾기</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
