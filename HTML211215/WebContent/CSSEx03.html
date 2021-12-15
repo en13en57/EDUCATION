@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자식선택자(Child Selector)</title>
+<style type="text/css">
+	div > p { color : red; }
+	div > span { color : blue; }
+	div > b { color : green; }
+</style>
+</head>
+<body>
+	<!-- 하위와의 차이 자식과 자손의 차이 -->
+	<h3>자식선택자(Child Selector) : >으로 구분한다.</h3>
+	<hr />
+	<!-- 
+	div>p{나는 $$문단입니다.}*4+(span{나는 영역 $$입니다}+br)*4
+	 -->
+	<div>
+		<p>나는 01문단입니다.</p>
+		<p>나는 02문단입니다.</p>
+		<p>나는 <span>03문단</span>입니다.</p>
+		<p>나는 04문단입니다.</p>
+		<span>나는 영역 01입니다</span>
+		<br />
+		<span>나는 <b>영역02</b>입니다</span>
+		<br />
+		<span>나는 <b>영역 03</b>입니다</span>
+		<br />
+		<span>나는 영역 04입니다</span>
+		<br />
+		<div>
+			<div>
+				<p>div>div>div>p 나는 문단입니다.</p>
+			</div>
+		</div>
+	<b>영역 03</b>
+	</div>
+	
+	<p>나는 04문단입니다.</p>
+	<span>나는 영역 01입니다</span>
+	<br />
+</body>
+</html>

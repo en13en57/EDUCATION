@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>하위선택자(Descendant Selector)</title>
+<style type="text/css">
+	div p { color : red; }
+	div span { color:blue; }
+</style>
+</head>
+<body>
+	<!-- 자손 선택자 -->
+	<h3>하위선택자(Descendant Selector) : 공백으로 구분한다.</h3>
+	<hr />
+	<!-- 
+	div>p{나는 $$문단입니다.}*4+(span{나는 영역 $$입니다}+br)*4
+	 -->
+	<div>
+		<p>나는 01문단입니다.</p>
+		<p>나는 02문단입니다.</p>
+		<p>나는 <span>03문단</span>입니다.</p>
+		<p>나는 04문단입니다.</p>
+		<span>나는 영역 01입니다</span>
+		<br />
+		<span>나는 영역 02입니다</span>
+		<br />
+		<span>나는 영역 03입니다</span>
+		<br />
+		<span>나는 영역 04입니다</span>
+		<br />
+		<div>
+			<div>
+				<p>div>div>div>p 나는 문단입니다.</p>
+			</div>
+		</div>
+	</div>
+	
+	<p>나는 04문단입니다.</p>
+	<span>나는 영역 01입니다</span>
+	<br />
+</body>
+</html>
