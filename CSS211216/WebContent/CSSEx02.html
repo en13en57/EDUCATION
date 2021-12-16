@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>리스트타일 지정하기</title>
+<style type="text/css">
+	#ul1 {
+		list-style-image: url('bg4.png')
+	}	
+	#ul2 {
+		list-style-type: circle;
+		list-style-position: outside; /* 앞 마커가 앞으로 나오냐 */
+	}	
+	#ul3 {
+		list-style-type: square;
+		list-style-position: inside; /* 앞 마커가 뒤로 나오냐*/
+	}	
+	#ul4 {
+		list-style-type: decimal-leading-zero;
+	}	
+</style>
+</head>
+<body>
+	<!-- 
+	(ul[id="ul$"]>li{아이템 $$}*3)*4
+	 -->
+	<ul id="ul1">
+		<li>아이템 01</li>
+		<li>아이템 02</li>
+		<li>아이템 03</li>
+	</ul>
+	<ul id="ul2">
+		<li>대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 정당의 설립은 자유이며, 복수정당제는 보장된다. 국회의 정기회는 법률이 정하는 바에 의하여 매년 1회 집회되며,
+	 국회의 임시회는 대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여 집회된다. 명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다.</li>
+		<li>아이템 02</li>
+		<li>아이템 03</li>
+	</ul>
+	<ul id="ul3">
+		<li>대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 정당의 설립은 자유이며, 복수정당제는 보장된다. 국회의 정기회는 법률이 정하는 바에 의하여 매년 1회 집회되며,
+	 국회의 임시회는 대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여 집회된다. 명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다.</li>
+		<li>아이템 02</li>
+		<li>아이템 03</li>
+	</ul>
+	<ul id="ul4">
+		<li>아이템 01</li>
+		<li>아이템 02</li>
+		<li>아이템 03</li>
+	</ul>
+</body>
+</html>
