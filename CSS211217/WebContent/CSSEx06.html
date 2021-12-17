@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div {
+		margin: 10px; padding: 10px; width: 100px; height: 100px; line-height: 100px; 
+		border: 1px solid gray;
+		background-color: pink;
+		text-align: center;
+		vertical-align: middle;
+		float: left; /* div h옆으로 붙여버림*/
+	
+	}
+	div:hover{
+		background-color: skyblue;
+	
+	}
+	
+	div#box1{
+		border-radius: 20px;
+	}
+	div#box2{
+		border-top-left-radius: 100px;
+		border-bottom-right-radius: 100px;
+	}
+	div#box3{
+		border-top-left-radius: 200px;
+		border-radius: 100px;
+	}
+	div#box4{
+		border-top-left-radius: 200px;
+		border-bottom-left-radius: 200px;
+	}
+	div#box5{
+		border-top-right-radius: 200px;
+		border-bottom-right-radius: 200px;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+	div[id="box$"]{내용$}*5
+	 -->
+	<div id="box1">내용1</div>
+	<div id="box2">내용2</div>
+	<div id="box3">내용3</div>
+	<div id="box4">내용4</div>
+	<div id="box5">내용5</div>
+</body>
+</html>
