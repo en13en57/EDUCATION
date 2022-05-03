@@ -68,14 +68,14 @@ class AiTVs implements TV {
 	public void  powerOff() { System.out.println("~~ AiTVs powerOff ~~"); }
 	public void  volumeUp() { sp.volumeUp(); }
 	public void  volumeDown() { sp.volumeDown(); }
-} //AiTVi
+} //AiTVs
 
 public class TVUser09_JC02 {
 
 	public static void main(String[] args) {
 		// 1. 스프링 컨테이너 구동
 		AbstractApplicationContext sc = new  
-			AnnotationConfigApplicationContext("JavaConfig02.class");
+			AnnotationConfigApplicationContext(JavaConfig02.class);
 		
 		// 2. 필요한 객체(TV) 를 전달 & 서비스 실행
 		System.out.println("**  Test1) 고전적방법 : 직접 new  **");
